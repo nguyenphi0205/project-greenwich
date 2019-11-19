@@ -1,0 +1,1071 @@
+/* 
+    Document   : quanly
+    Created on : 10 09, 2013, 9:09:45 AM
+    Author     : hieunguyen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*root { 
+    display: block;
+}
+*/
+checkboxstyle input[type="checkbox"], .checkboxstyle input[type="radio"] {
+    display: none;   /*khong hien thi nut check mac dinh*/
+}
+.checkboxstyle input[type="checkbox"] + label{
+    height: 22px;
+    display: block;
+    background: url("image/chkbox.png") no-repeat;
+}
+.checkboxstyle input[type="radio"] + label{
+    height: 22px;
+    display: block;
+    background: url("image/radio.png") no-repeat;
+}
+.checkboxstyle input[type="checkbox"]:checked +label, .checkboxstyle input[type="radio"]:checked +label{
+    background-position: 0 -22px;
+}
+.checkboxstyle label{
+    line-height: 22px;
+    padding-left: 25px;
+}
+
+.thong_bao_dang_nhap_admin{
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+	margin-left: 110px;
+}
+
+/* css main form content */
+
+.title_main_form_admin{
+    font-weight: bold;
+    font-size: 20px;
+    color: #27415e;
+    border: 10px solid;
+    border-left: 5px solid;
+    border-top: none;
+    border-radius: 40px 0 40px;
+    border-bottom: 1px solid;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 0 0 30px;
+}
+#them_size{
+     width: 900px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+#them_size td{
+    padding: 5px 25px;
+}
+#them_size input[type="text"]{
+    width: 260%;
+    padding:5px 10px;
+}
+.danh_sach_items, .form_cap_nhat{
+    width: 900px;
+    margin: 20px auto;
+    font-size: 15px;
+}
+.form_cap_nhat input[type="text"], .form_cap_nhat select, .form_cap_nhat textarea{
+    width: 80%;
+    padding:5px 10px;
+}
+.form_cap_nhat td{
+    padding: 5px 10px;
+}
+.row_header{
+    text-align: center;
+    background: #3E8DEC;
+}
+.row_header > td{
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+}
+.item_admin > td{
+    padding: 5px;
+    border-bottom: 1px solid #3E8DEC;
+}
+.item_admin img{
+    width: 100px;
+}
+.cell_center{
+    text-align: center;
+}
+.phan_trang_admin{
+    padding: 0 0 0 400px;
+}
+.phan_trang_admin .pagination{
+    margin: 0;
+}
+.ds_button_admin{
+    margin: 0 0 10px 0;
+    border: 10px solid #27415e;
+    border-left: none;
+    border-top: none;
+    border-radius: 40px 0 50px;
+    border-bottom: 1px solid #27415e;
+    padding:  0 15px 0 0;
+}
+.btn_password{
+     cursor: pointer;
+    padding: 10px 30px;
+    margin: 5px 400px 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px #bbb;
+    background: #3E8DEC;
+    color: #fff;
+}
+.btn_sua, .btn_luu{
+     cursor: pointer;
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px #bbb;
+    background: #3E8DEC;
+    color: #fff;
+}
+.btncapnhat{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    box-shadow: 4px 4px 3px #bbb;
+    background: #3E8DEC;
+    color: #fff;
+}
+.btn_them, .btn_xoa{
+    cursor: pointer;
+    padding: 10px 30px;
+    float:right;
+    margin: 5px 10px 10px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 3px #bbb;
+}
+.btn_them:hover, .btn_xoa:hover, .btn_password:hover{
+    box-shadow: none;
+}
+.btn_them{
+    background: #3E8DEC;
+    color: #fff;
+}
+.btn_xoa{
+    background: #d43f3a;
+    color: #fff;
+}
+
+/* END css main form content */
+
+/* css menu admin */
+.thong_tin_admin{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+.menu_admin{
+    position: relative;
+}
+.ds_menu_admin{
+
+}
+.menu_admin{
+    padding: 40px 0 0 0;
+    width: 200px;
+    float: left;
+}
+.title_menu{
+    font-weight: bold;
+    color: #fff;
+    background: #3E8DEC;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100% 30% 100% 30%;
+}
+.ds_menu_admin ul{
+    list-style-type: none;
+}
+.menu_chinh_admin{
+    margin: 10px 0;
+    padding: 0 5px;
+}
+.menu_chinh_admin > div{
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #3E8DEC;
+    border-radius: 0 0 50px 0;
+}
+.menu_chinh_admin > div > div{
+    margin: 10px 0 15px;
+    padding: 0 5px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s, display 1s;
+}
+
+.menu_chinh_admin > div:hover > div{
+    display: block;
+    opacity: 1;
+}
+
+/* END css menu admin */
+
+body{
+    /*background: none repeat scroll 0 0 #E2E2E2;
+    min-width: 1000px; */ 
+}
+
+#all {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0;
+    text-align: left;
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+/* header*/
+#header 
+{
+    display: block;
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid #006da7;
+}
+.main_content_admin{
+    margin: auto;
+    /*min-height: 500px;*/
+}
+.logo 
+{
+    float: left;
+    margin-top: 0;
+}
+
+#logoright {
+    float: right;
+    margin-right: 10px;
+}
+#logocenter {
+    margin: 3% 0 10px 11%;
+}
+/*----------------*/
+#noidung {
+    /*min-height: 100%;*/
+    margin-top: 125px;
+    position: relative;
+}
+/* footer*/
+/*#footer
+{
+    background: none repeat scroll 0 0 #3E84C2;
+    color: #FFFFFF;
+    font-family: Arial,'Arial Unicode MS',Helvetica,Sans-Serif;
+    font-size: 12px;
+    line-height: 140%;
+    padding: 8px;
+    position: relative;
+    text-align: left;
+    overflow: hidden
+}*/
+
+
+.cpr {
+    float: left;
+}
+.cpr-left {
+    margin-right: 30px;
+}
+
+.cpr-right {
+    margin: 20px 0 0 12%;
+}
+.cpr-right a img {
+    width: 40px;
+     margin-right: 10px;
+}
+.cpr-center {
+    margin-left: 30px;
+}
+/*--------------*/
+.button1 {
+    background: url("images/j_button1_left.png") no-repeat scroll 0 0 transparent;
+    margin-left: 5px;
+    /*padding-left: 10px;*/
+    white-space: nowrap;
+}
+.button1, .button1 div {
+    float: right;
+    height: 1%;
+}
+
+.button1 .next {
+    background: url("images/j_button1_next.png") no-repeat scroll 100% 0 transparent;
+}
+#section-box {
+    background-color: #FFFFFF;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 340px;
+    
+}
+
+div.m {
+    background-color: #F4F4F4;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0 8px;
+}
+
+fieldset.loginform {
+    border: 0 none;
+    width: auto;
+}
+fieldset {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    text-align: left;
+}
+
+input#login-username, input#login-password, select#lang {
+    clear: right;
+    float: right;
+    margin: 0 0 10px;
+    min-width: 145px;
+}
+
+label#login-password-lbl, label#login-username-lbl, label#login-language-lbl {
+    display: block;
+    margin: 5px 15px 10px 0;
+}
+
+form label, form span.faux-label {
+    font-size: 1.091em;
+}
+
+fieldset label, fieldset span.faux-label {
+    clear: left;
+    display: block;
+    float: left;
+    margin: 5px 0;
+}
+
+form#form-login {
+    clear: both;
+    margin: 0;
+}
+
+#form-login .button-holder {
+    clear: right;
+    float: right;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+
+.button1 a {
+    color: #333333;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 1.091em;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 35px 0 6px;
+}
+a:link,a:visited {
+    color: #D830A0;
+    outline: medium none;
+    text-decoration: none;
+}
+a, img {
+    margin: 0;
+    padding: 0;
+}
+
+
+div#element-box.login {
+   box-shadow: 2px 3px 2px 0px #bbb;
+    background-color: rgba(166, 160, 255, 0.18);
+    border-radius: 10px 10px 10px 10px;
+}
+#element-box, #toolbar-box, #submenu-box {
+    padding: 10px;
+}
+#element-box {
+    margin-bottom: 11px;
+}
+.login {
+    margin: 50px auto 100px !important;
+    width: 550px;
+}
+
+div#element-box div.m {
+    padding: 10px;
+}
+
+.wbg {
+    background-color: #FFFFFF !important;
+    /*height: 200px;*/
+}
+
+
+h1 {
+    margin: 10px 0 5px 10px;
+    color: #025A8D;
+    font-size: 1.818em;
+    padding-bottom: 8px;
+}
+
+#lock {
+    background: url("images/j_login_lock.png") no-repeat scroll 50% 0 transparent;
+    height: 137px;
+    width: 150px;
+}
+
+input:focus, select:focus, textarea:focus {
+    background-color: #FFFFDD;
+}
+
+input, select, textarea {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid silver;
+    /*font-size: 0.909em;*/
+}
+
+#system-message {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#system-message > dt {
+    display: none;
+    font-weight: bold;
+}
+
+#system-message > dd {
+    font-weight: bold;
+    margin: 0;
+    text-indent: 30px;
+}
+
+#system-message dd.error ul {
+    background-image: url("images/notice-alert.png");
+    background-repeat: no-repeat;
+}
+#system-message dd.message ul {
+    background-image: url("images/notice-info.png");
+    background-repeat: no-repeat;
+}
+#system-message > .error > ul {
+    background-color: #E6C0C0;
+    background-image: url("images/notice-alert.png");
+    border-color: #DE7A7B;
+}
+#system-message > .error > ul, #system-message > .warning > ul, #system-message > .notice > ul {
+    color: #CC0000;
+}
+#system-message > .message > ul {
+    background-color: #C3D2E5;
+    background-image: url("images/notice-info.png");
+}
+#system-message > dd > ul {
+    background-position: 4px top;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #84A7DB;
+    border-top: 3px solid #84A7DB;
+    color: #0055BB;
+    list-style: none outside none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.btndangnhap {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    font-size: 1.1em;
+    height: 26px;
+    padding-right: 20px;
+    width: 106px;
+    cursor: pointer;
+}
+
+.theloai {
+    line-height: 2;
+    list-style: none outside none;
+    padding-left: 0;
+    font-size: 110%;
+    margin: 0px;    
+}
+
+#nav 
+{
+    width: 20%;
+    float: left;
+    margin-top: 20px;
+}
+
+#nav h3 {
+    background: #006da7;
+    color: #FFFFFF;
+    font-family: Arial,'Titillium Maps';
+    font-size: 15px;
+    margin: 0;
+    padding: 6px 0 5px;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+}
+
+#nav ul li {
+    background: rgba(0,109,167,0.8);;
+    padding: 2px;
+}
+
+#nav ul li a {
+    color: #FFFFFF;
+}
+
+#nav ul li a:hover {
+    color: #FF0000;
+    /*font-weight: bold;*/
+}
+
+#content {
+    float: right;
+    width: 80%;
+}
+
+#content .theloai {
+    padding: 0 10px 0 10px;
+    height: auto;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+#content .theloai .tieude {
+    color: #006da7;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 6px 6px 0 0;
+}
+.home{margin-left: 10px}
+#main-menu {     
+    font-size: 110%;
+    line-height: 2;
+    padding: 5px 15px;
+    position: absolute;
+    right: 12%;
+    text-align: right;
+    top: 3px;
+    background: #006da7;
+    border-radius: 10px;
+}
+#main-menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#main-menu a:hover {
+    color: #FF0000;
+}
+
+.clear {
+    clear: both;
+}
+
+#content .theloai table td {
+    font-size: 75%;
+    padding: 6px;
+}
+
+#content .theloai table td a {
+    color: #025A8D;
+    text-decoration: none;
+}
+
+#content .theloai table td a:hover {
+    color: #CC0000;
+}
+
+.meta {
+    margin: 0 10px 0 10px;
+    padding: 5px;
+}
+
+.metafield {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+
+.metafield label, fieldset span.faux-label {
+    clear: left;
+    display: block;
+    float: left;
+    margin: 5px 0 0 20px;
+    max-width: 250px;
+    min-width: 145px;
+}
+
+.metafield input, .meta_theloai textarea, .meta_theloai select, .meta_theloai img, .meta_theloai button, 
+.image_theloai textarea, .image_theloai select, .image_theloai img, .image_theloai button {
+    float: left;
+    margin: 5px 5px 5px 20px;
+    width: auto;
+}
+
+.image_theloai, .meta_theloai {
+    margin: 0 10px 0 10px;
+    padding: 5px;
+}
+
+.image_theloai div {
+    float: left;
+    margin: 5px 25px 5px 20px;
+    width: auto;
+}
+
+.image_theloai div img {
+    clear: left;
+    margin: 0;
+    width: 80px;
+}
+
+.image_theloai div label {
+    clear: left;
+    margin: 0;
+    float: none;
+}
+
+.nutlenh1
+{
+    color: #000000;
+    padding: 5px 25px;
+    
+}
+
+.nutlenh1:hover
+{
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+.nutlenh2
+{
+    color: #ffffff;
+    background: #3F87C2;
+    padding: 5px 25px;
+    cursor: pointer;
+}
+
+.nutlenh-holder {
+    border: 1px solid silver;
+    float: right;
+    height: 23px;
+    margin: 0 15px 7px 0px
+}
+
+.nutlenh-holder a {
+    display: block;        
+    padding: 5px;
+}
+
+#cklist
+{
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.ckslide
+{
+    border: 1px solid #CCCCCC;
+    border-radius: 5px 5px 5px 5px;
+    clear: both;
+    margin: 3px 0 !important;
+    min-height: 60px;
+    
+}
+
+.ckslidecontainer
+{
+    float: left;
+    padding: 5px;
+    position: relative;
+    width: 98%;
+}
+
+.cksliderow
+{
+    clear: both;
+    padding-top: 8px;
+}
+
+.cksliderow2, .cksliderow1, .cksliderow3
+{
+    padding-top: 8px;
+}
+
+.ckslideimgcontainer
+{
+    border: 5px solid #FFFFFF;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 1px #333333;
+    float: left;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+    overflow: hidden;
+    width: 200px;
+}
+
+
+.ckslidedelete {
+    background: url("images/delete.png") no-repeat scroll center center transparent;
+    border: medium none;
+    height: 16px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 16px;
+}
+
+.ckslidedelete:hover {
+    background: url("images/delete_hover.png") no-repeat scroll center center transparent;
+    cursor: pointer;
+}
+
+.ckslidenumber {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    color: #7B7B7B;
+    font-size: 20px;
+    height: 30px;
+    margin: -5px 0px 0px -5px;
+    text-align: center;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+.chao {
+    border: 1px solid #006da7;
+    border-radius: 10px;
+    margin: 10px;
+    padding-bottom: 12px;
+}
+
+#chonlua{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid;
+    color: #006da7;
+    display: none;
+    font-size: 12px;
+    font-weight: bold;
+    height: 51px;
+    padding: 2px;
+    position: absolute;
+    right: 235px;
+    top: 38px;
+    width: 145px;
+}
+#doimatkhau{
+    padding:5px;
+}
+#doithongtincanhan
+{
+    padding:5px;
+}
+#doimatkhau:hover{
+    background: #006da7;
+    color: #fff;
+}
+#doithongtincanhan:hover{
+    background: #006da7;
+    color: #fff;
+}
+#btnGhi{
+    margin-right: 180px !important;
+    padding: 2px;
+    min-width: 100px;
+    border-color: #0000FF;
+}
+#doimatkhau_button {
+    margin-top: 10px;
+    padding: 5px 30px;
+    border: 1px solid blue;
+}
+.left_mk {
+    float: left;
+    padding-top: 10px;
+}
+.right_mk {
+    float: right;
+    margin-right: -4px !important;
+    padding-top: 6px;
+}
+.right_mk input{
+    padding:3px;
+    border-radius: 3px;
+}
+#doithongtin_button {
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 5px 30px;
+    border: 1px solid blue;
+}
+.left_thongtin {
+    float: left;
+    padding-top: 10px;
+}
+.right_thongtin {
+    float: right;
+    margin-right: 20px !important;
+    padding-top: 6px;
+}
+.right_thongtin input{
+    padding:3px;
+    border-radius: 3px;
+}
+.doithongtin_button {
+    margin-left: 2px;
+    margin-top: 20px;
+    padding: 5px 30px;
+    border: 1px solid blue;
+}
+.select_chon_thong_ke
+{
+    margin-left: 235px !important;
+    font-size: 18px;
+}
+.item-doitac {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 140px;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    width: 230px;
+    cursor: pointer;
+}
+.item-doitac img{
+    width: 100%;
+    height: 70%
+}
+.item-doitac:hover{
+   border: 1px solid #0055BB;
+}
+.ds-doi-tac {
+    overflow: hidden;
+}
+.nut-doitac {
+    padding: 10px;
+    text-align: right;
+}
+.nut-doitac input{
+    padding: 3px;
+    cursor: pointer;
+}
+.nut-doitac input:hover{
+    background: red;
+    color: #fff
+}
+
+/* css them */
+.row-header
+{
+    background: #006da7;
+}
+.row-header td
+{
+    color: #ffffff;
+    font-weight: bold;
+}
+.button 
+{
+    margin-top: 5px;
+    padding: 5px;
+}
+.chua_cac_input_loc_du_lieu
+{
+    text-align: center;
+}
+.loc_bai_quang_cao 
+{
+    text-align: center;
+}
+
+/* css footer */
+
+.sktt-footer
+{
+  background: #006da7;
+  border-top: 1px dotted #9CAFC4;
+  padding: 25px;
+  margin: 0 auto;
+  position: relative;
+  color: #FCFCFD;
+  font-size: 13px;
+  font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  line-height: 175%;
+  text-align: center;
+  height: 30px;
+}
+.social-follow 
+{
+    float: right;
+}
+.button_social_item 
+{
+    float: right;
+    height: 40px;
+    width: 40px;
+}
+.copyright
+{
+    line-height: 30px;
+}
+.button_social_item img
+{
+    margin-top: 8px;
+}
+
+/* END css footer */
+
+
+
+
+.thong_tin_nguoi_mua{
+   width: 300px;
+    float:left;
+    margin-left: 20px;
+    line-height: 30px;
+}
+.thong_tin_nguoi_mua > div{
+    font-weight: bold;
+}
+.thong_tin_nguoi_nhan{
+    width: 300px;
+    float:left;
+    margin-left: 100px;
+    line-height: 30px;
+}
+.thong_tin_nguoi_nhan > div{
+    font-weight: bold;
+}
+.danh_sach_san_pham_cua_don_hang{
+    margin-left:20px;
+}
+
+.title_danh_sach_san_pham_cua_don_hang{
+    color:#3E8DEC;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.trang_thai_don_hang{
+    border: 3px solid #bbb;
+    color: #fff;
+    width: 250px;
+    margin: auto;
+    height: 45px;
+    line-height: 40px;
+    border-radius: 25px;
+    position: relative;
+}
+.nut_trang_thai_don_hang_off{
+    background: red;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.nut_trang_thai_don_hang_on{
+    width: 120px;
+    background: #13803c;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    padding: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* css trang gio hang */
+
+.table_gio_hang td{
+    text-align: center;
+    vertical-align: middle;
+}
+.table_gio_hang img{
+    width: 90%;
+}
+.table_gio_hang input[type="text"]{
+    text-align: center;
+    border-radius: 5px;
+}
+.table_gio_hang{
+    margin: 10px auto;
+}
+.header_gio_hang{
+    background: #3E8DEC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.table_gio_hang .le td, .table_gio_hang .chan td{
+    border-bottom: 1px solid #3E8DEC;
+}
+.tr_tong_tien td{
+    padding-top: 10px;
+    color: #d62728;
+    font-weight: bold;
+}
+.btn_thanh_toan{
+    background: #3E8DEC;
+    color: #fff;
+    width: 95px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+.btn_cap_nhat_gio_hang{
+    background: #269abc;
+    color: #fff;
+    width: 120px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn_huy_gio_hang{
+    background: #f00;
+    color: #fff;
+    width: 90px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn_thanh_toan, .btn_cap_nhat_gio_hang, .btn_huy_gio_hang{
+    float: right;
+    margin: 5px 10px;
+}
+.ds_button_gio_hang{
+    margin: auto 15px auto auto;
+}
+.trangthaidonhang{
+    width: 60%;
+    padding: 5px 10px;
+}
+/* END css trang gio hang */

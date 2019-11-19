@@ -1,0 +1,733 @@
+/* css co ban */
+
+.html_1{
+    background: url(../../../images/background_1.jpg) fixed no-repeat center top;
+    background-size: cover;
+}
+.html_2{
+    background: url(../../../images/background_2.jpg) fixed no-repeat center top;
+    background-size: cover;
+}
+.html_3{
+    background: url(../../../images/background_3.jpg) fixed no-repeat center top;
+    background-size: cover;
+}
+.html_4{
+    background: url(../../../images/background_4.jpg) fixed no-repeat center top;
+    background-size: cover;
+}
+body{
+    width: 1000px;
+    margin: auto!important;
+    background: #fff;
+    padding: 5px;
+}
+
+/* END css co ban */
+
+/* css main menu */
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul {
+    background: #efefef; 
+    background: linear-gradient(top, #3E8DEC 0%, #032E8E 100%);  
+    background: -moz-linear-gradient(top, #3E8DEC 0%, #032E8E 100%); 
+    background: -webkit-linear-gradient(top, #3E8DEC 0%,#032E8E 100%); 
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    border-radius: 10px;  
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    z-index: 99;
+}
+nav > ul{
+    margin: 5px auto;
+    display: block;
+    width: 95%;
+}
+nav ul:after {
+    content: ""; clear: both; display: block;
+}
+nav ul li {
+float: left;
+}
+nav ul li:hover, nav ul li.current{
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a, nav ul li.current a {
+    color: #fff;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 10px 40px;
+    color: #efefef;
+    text-decoration: none;
+}
+
+nav ul ul {
+    background: #5f6975; border-radius: 0px; padding: 0;
+    position: absolute; top: 100%;
+}
+nav ul ul li {
+    float: none; 
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a;
+    position: relative;
+    min-width: 200px;
+}
+nav ul ul li a {
+    padding: 10px 40px;
+    color: #fff;
+}	
+nav ul ul li a:hover {
+    background: #4b545f;
+}
+nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+}
+
+/* END css main menu */
+
+/* css danh sach san pham */
+
+.div_all_product{
+    width: 100%;
+}
+.block_product{
+    float: left;
+    width: 200px;
+    padding: 10px 15px;
+    min-height: 315px;
+    position: relative;
+    border: 1px solid #eee;
+}
+.image_product{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.image_product img{
+    width:100%;
+    max-height: 200px;
+}
+.des_product{
+    display: none;
+    position: absolute;
+    width: 211px;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 200px;
+    color: #fff;
+    padding:10px;
+    font-weight: bold;
+}
+.block_product:hover .des_product{
+    display: block;
+}
+.info_product{
+    padding: 10px;
+}
+.btn_add_to_cart{
+    position: absolute;
+    bottom: 15px;
+    left: 70px;
+    border: 1px solid #032E8E;
+    padding: 5px 15px;
+    background: #3E8DEC;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_add_to_cart:hover{
+    background: #032E8E;
+}
+.price_product{
+    color: #f00;
+}
+.name_product{
+    font-weight: bold;
+    height: 40px;
+    overflow: hidden;
+}
+
+/* END css danh sach san pham */
+
+/* css module tin tuc moi, trang tin tuc */
+
+.button_xem_them{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+.left-content{
+    float: left;
+    width: 295px;
+    padding: 0 5px 0 0;
+}
+.main_content{
+    float:left;
+    width: 700px;
+    position: relative;
+}
+.div_all_tin_tuc{
+    height: 370px;
+    overflow: hidden;
+    position: relative
+}
+.block_tin_tuc{
+    margin: 10px 0;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+.block_tin_tuc_main{
+    margin: 10px 0;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid #3E8DEC;
+}
+.image_tin_tuc{
+    width: 80px;
+    max-height: 80px;
+    overflow: hidden;
+    float: left;
+    margin: 0 5px 0 0;
+}
+.image_tin_tuc img{
+    width: 100%;
+}
+.name_tin_tuc{
+    font-weight: bold;
+    color: #3E8DEC;
+}
+.div_chieu_dai_thuc_module{
+    position: absolute;
+}
+.title_module{
+    text-align: center;
+    width: 235px;
+    margin: 5px auto 10px;
+    color: #fff;
+    background: #3E8DEC;
+    padding: 5px;
+    height: 20px;
+    font-weight: bold;
+    position: relative;
+}
+.title_module:before{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    content: '';
+    top: 4px;
+    left: -11px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    background: #3E8DEC;
+}
+.title_module:after{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -11px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    background: #3E8DEC;
+}
+.info_tin_tuc{
+    text-align: justify;
+}
+
+/* END css module tin tuc moi */
+
+/* css module san pham ban chay */
+
+.best_sale_product{
+    position: relative;
+    overflow: hidden;
+    width: 45%;
+    float: left;
+    height: 265px;
+    margin:0 0 0 20px;
+}
+#wrapper-slide-loai-sp{
+    height: 265px;
+    overflow: hidden;
+}
+.info_best_sale_product{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+}
+.info_best_sale_product a{
+    color: #fff!important;
+}
+.best_sale_product:hover > .info_best_sale_product{
+    display: block;
+}
+.image_best_sale_product img{
+    width: 100%;
+}
+.title_module_main_content{
+    color: #fff;
+    background: #3E8DEC;
+    padding: 10px;
+    padding: 5px;
+    height: 20px;
+    font-weight: bold;
+    position: relative;
+    width: 670px;
+    margin: 5px 0 0 0;
+}
+.title_module_main_content:after{
+    width: 21px;
+    height: 22px;
+    position: absolute;
+    content: '';
+    top: 4px;
+    right: -11px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    background: #3E8DEC;
+}
+.prev_button_slide_best_sale{
+    background: url('../../../images/prev.png') no-repeat;
+    width: 43px;
+    height: 49px;
+    position: absolute;
+    left: 10px;
+    top: 115px;
+    display: none;
+}
+.next_button_slide_best_sale{
+    background: url('../../../images/next.png') no-repeat;
+    width: 43px;
+    height: 49px;
+    position: absolute;
+    right: 10px;
+    top: 115px;
+    display: none;
+}
+.wrapper{
+    position: relative;
+}
+
+/* END css module san pham ban chay */
+
+/* css trang contact */
+
+.google_map{
+    width: 95%;
+    margin: auto;
+}
+.form_contact{
+    width: 95%;
+    margin: auto;
+}
+.noi_dung_mail{
+    float: right;
+}
+.noi_dung_mail textarea{
+    height: 65px;
+}
+.form-group input{
+    padding: 5px;
+    margin: 0 0 10px 0;
+    width: 225px;
+}
+.form-group input[type="submit"]{
+    width: 100%;
+    background: -webkit-linear-gradient(top, #3E8DEC 0%,#032E8E 100%); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, #3E8DEC 0%,#032E8E 100%); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, #3E8DEC 0%,#032E8E 100%); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top, #3E8DEC 0%,#032E8E 100%); /* Standard syntax */
+    color: #fff;
+}
+
+/* END css trang contact */
+
+/* css slide banner */
+
+.slide_items img{
+    width: 100%;
+}
+#slider_banner{
+    overflow: hidden;
+}
+#wrapper{
+    position: relative;
+}
+.next_banner, .prev_banner{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+.next_banner{
+    right: 10px;
+}
+.prev_banner{
+    left: 10px;
+}
+.next_banner img, .prev_banner img{
+    width: 100%;
+}
+
+
+/* END css slide banner */
+
+/* css header banner */
+
+.header_banner{
+    margin: 0 0 10px 0;
+    border-bottom: 3px solid #3E8DEC;
+    position: relative;
+}
+.gio_hang, .gio_hang_fixed{
+    width: 40px;
+    height: 40px;
+}
+.gio_hang img, .gio_hang_fixed img{
+    width: 100%;
+}
+.thong_tin_khach_hang{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.delivery_fast{
+    position: absolute;
+    right: 63px;
+    top: 5px;
+    background: url('../../../images/delivery-fast.png') no-repeat 0px -15px;
+    width: 287px;
+    height: 55px;
+    padding: 0px 10px 0 0;
+    border-right: 2px solid #3E8DEC;
+}
+.login{
+    /*position: absolute;
+    right: 63px;
+    top: 5px;
+    width: 287px;
+    height: 55px;
+    padding: 0px 10px 0 0;
+    border-right: 2px solid #3E8DEC;*/
+}
+
+/* END css header banner */
+
+/* css slide image chi tiet san pham */
+
+.magnify {
+  position: relative;
+  display: inline-block;
+}
+.magnify .magnify-lens {
+  /* Create the magnifying lens */
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  /* Multiple box shadows to achieve the glass lens effect */
+  -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85),
+    0 0 7px 7px rgba(0, 0, 0, 0.25),
+    inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+  /* Hide the mouse pointer */
+  cursor: none;
+  /* Hide the lens by default */
+  display: none;
+  /* Place the lens on top of other elements */
+  z-index: 100;
+}
+.magnify .magnify-lens.loading {
+  background: #333 !important;
+  opacity: .75;
+}
+.magnify .magnify-lens.loading:after {
+  /* Loading text */
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  content: 'Loading...';
+  font: italic normal 16px/1 Calibri, sans-serif;
+  text-align: center;
+  text-shadow: 0 0 2px rgba(51, 51, 51, .8);
+  text-transform: none;
+}
+.tab_thong_tin_khuyen_mai, .tab_mo_ta_chi_tiet{
+    float: left;
+    cursor: pointer;
+}
+.tab_thong_tin_khuyen_mai{
+    background: url(../../../images/btn_khuyen_mai.png) no-repeat 10px 5px;
+    padding: 6px 15px 5px 40px;
+}
+.tab_thong_tin_khuyen_mai.active_tab, .tab_thong_tin_khuyen_mai:hover{
+    background: url(../../../images/btn_khuyen_mai_w.png) no-repeat 10px 5px #3E8DEC;
+    color: #fff;
+}
+.tab_mo_ta_chi_tiet{
+    background: url(../../../images/btn_thong_tin.png) no-repeat 10px 5px;
+    padding: 6px 15px 5px 40px;
+}
+.tab_mo_ta_chi_tiet.active_tab, .tab_mo_ta_chi_tiet:hover{
+    background: url(../../../images/btn_thong_tin_w.png) no-repeat 10px 5px #3E8DEC;
+    color: #fff;
+}
+.menu_tab_thong_tin_sp{
+    margin: 25px 0 0 0;
+    background: #ddd;
+    height: 33px;
+}
+.mo_ta_chi_tiet, .thong_tin_khuyen_mai{
+    padding: 10px;
+}
+.btn_mua_ngay, .btn_mua_tra_gop{
+    padding: 0px 0 0 0;
+    width: 325px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.btn_mua_ngay{
+    background: #f59123;
+}
+.btn_mua_tra_gop{
+    background: #3E8DEC;
+}
+.button_mua_hang{
+    position: absolute;
+    right: 0px;
+    top: 30px;
+}
+.mo_ta_tom_tat{
+    padding: 5px;
+    width: 325px;
+    border: 1px solid #ccc;
+}
+.don_gia_chi_tiet{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f00;
+}
+
+/* END css slide image chi tiet san pham */
+
+/* css footer */
+
+.button_go_to_top{
+    width: 60px;
+    height: 120px;
+    position: fixed;
+    display: none;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    background: url('../../../images/4_xanh.png') no-repeat;
+    background-size: 70px;
+}
+.gio_hang_fixed{
+    position: fixed;
+    top: 50px;
+    right: -1px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #111;
+    box-shadow: -2px 2px 5px;
+    cursor: pointer;
+    display: none;
+}
+.so_luong_gio_hang{
+    position: absolute;
+    top: -11px;
+    right: -5px;
+    background: #f00;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px 1px 5px;
+}
+.so_luong_gio_hang_fixed{
+    position: fixed;
+    top: 55px;
+    right: 4px;
+    background: #f00;
+    border-radius: 5px;
+    padding: 5px 5px 2px 5px;
+    color: #fff;
+}
+.footer{
+    border-top: 3px solid #3E8DEC;
+    color: #3E8DEC;
+    padding: 13px 10px 10px 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* END css footer */
+
+/* css module yahoo skype */
+
+.tu_van_qua_yahoo{
+    text-align: center;
+}
+
+/* END css module yahoo skype */
+
+/* css trang gio hang */
+
+.table_gio_hang td{
+    text-align: center;
+    vertical-align: middle;
+}
+.table_gio_hang img{
+    width: 90%;
+}
+.table_gio_hang input[type="text"]{
+    text-align: center;
+    border-radius: 5px;
+}
+.table_gio_hang{
+    margin: 10px auto;
+}
+.header_gio_hang{
+    background: #3E8DEC;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+.table_gio_hang .le td, .table_gio_hang .chan td{
+    border-bottom: 1px solid #3E8DEC;
+}
+.tr_tong_tien td{
+    padding-top: 10px;
+    color: #d62728;
+    font-weight: bold;
+}
+.btn_thanh_toan{
+    background: #3E8DEC;
+    color: #fff;
+    width: 95px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+.btn_cap_nhat_gio_hang{
+    background: #269abc;
+    color: #fff;
+    width: 120px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn_huy_gio_hang{
+    background: #f00;
+    color: #fff;
+    width: 90px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn_thanh_toan, .btn_cap_nhat_gio_hang, .btn_huy_gio_hang{
+    float: right;
+    margin: 5px 10px;
+}
+.ds_button_gio_hang{
+    margin: auto 15px auto auto;
+}
+
+/* END css trang gio hang */
+
+/* css trang thanh toan */
+
+.chua_thong_tin_thanh_toan input[type="text"]{
+    width: 100%;
+}
+.chua_thong_tin_thanh_toan td{
+    padding: 5px 0;
+}
+.validation_error li{
+    color: #f00;
+    font-weight: bold;
+}
+.thanh_toan_success{
+    color: #3E8DEC;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* END css trang thanh toan */
+
+/* css comment facebook */
+
+.fb-comments.fb_iframe_widget{
+    width: 555px!important;
+    padding-left: 80px;
+    padding-right: 65px;
+    padding-top: 10px;
+    border-top: 5px solid #3E8DEC;
+}
+
+/* END css comment facebook */
+
+/* css module ty gia */
+
+.table_ty_gia td{
+    border-bottom: 1px solid #3E8DEC;
+    text-align: center;
+}
+.table_ty_gia{
+    width: 275px;
+    margin: auto;
+    border: 1px solid;
+}
+.head_ty_gia{
+    background: #3E8DEC;
+    color: #fff;
+    font-weight: bold;
+}

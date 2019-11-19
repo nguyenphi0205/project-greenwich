@@ -1,0 +1,1 @@
+<a href="{{route('send-to-mail',[$nguoidung->id,csrf_token()])}}">Confirm your find good foods account registration</a>
